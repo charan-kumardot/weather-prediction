@@ -18,10 +18,10 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Temp" placeholder="Temp" required="required" />
-        <input type="text" name="Humidity" placeholder="Humidity" required="required" />
-		<input type="text" name="altitude" placeholder="altitude" required="required" />
-        <input type="text" name="pressure" placeholder="pressure" required="required" />
+    	<input type="number" name="Temp in °C" placeholder="Temp" required="required" />
+        <input type="number" name="Humidity in %" placeholder="Humidity" required="required" />
+		<input type="number" name="altitude in meters" placeholder="altitude" required="required" />
+        <input type="number" name="pressure in hg" placeholder="pressure" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
